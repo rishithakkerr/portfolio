@@ -1,0 +1,114 @@
+/* App.css — Global Styles */
+
+/* Import a clean, readable Google Font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+
+/* CSS Variables — change these to retheme the whole site */
+:root {
+  --blue: #2563eb;
+  --blue-light: #eff6ff;
+  --blue-dark: #1d4ed8;
+  --text-dark: #111827;
+  --text-mid: #374151;
+  --text-light: #6b7280;
+  --bg: #ffffff;
+  --bg-section: #f9fafb;
+  --border: #e5e7eb;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+  --shadow-hover: 0 6px 24px rgba(37, 99, 235, 0.13);
+  --max-width: 1000px;
+}
+
+/* Reset and base */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Make the full page a flex column so the footer is always pushed to the bottom */
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text-dark);
+  line-height: 1.7;
+  font-size: 16px;
+}
+
+.app {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* The page content between navbar and footer grows to fill leftover space */
+.app > *:not(.navbar):not(.footer) {
+  flex: 1;
+}
+
+/* Reusable section wrapper */
+.section {
+  padding: 80px 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* Section heading */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+/* Blue underline accent under headings */
+.section-title span {
+  color: var(--blue);
+}
+
+.section-divider {
+  width: 48px;
+  height: 4px;
+  background: var(--blue);
+  border-radius: 4px;
+  margin-bottom: 40px;
+}
+
+/* Reusable primary button */
+.btn-primary {
+  display: inline-block;
+  background: var(--blue);
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background: var(--blue-dark);
+  transform: translateY(-2px);
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 28px 24px;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  border-top: 1px solid var(--border);
+  background: var(--bg-section);
+}

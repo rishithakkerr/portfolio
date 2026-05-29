@@ -1,0 +1,117 @@
+/* Experience.css */
+
+.experience-section {
+  background: var(--bg-section);
+}
+
+/* Stack of experience cards */
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Single experience card */
+.exp-card {
+  display: flex;
+  gap: 24px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 24px 28px;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.exp-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+/* Emoji icon on the left */
+.exp-dot {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  background: var(--stone-100);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  margin-top: 2px;
+}
+
+.exp-content {
+  flex: 1;
+}
+
+.exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.exp-role {
+  font-size: 0.97rem;
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.exp-org {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  margin-top: 2px;
+  letter-spacing: 0.01em;
+}
+
+/* Date range — quiet label */
+.exp-period {
+  font-size: 0.72rem;
+  color: var(--text-light);
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: var(--stone-100);
+  padding: 4px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.exp-points {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.exp-points li {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  padding-left: 14px;
+  position: relative;
+  line-height: 1.65;
+}
+
+/* Subtle dash bullet */
+.exp-points li::before {
+  content: "—";
+  color: var(--border-soft);
+  position: absolute;
+  left: 0;
+  font-weight: 400;
+  font-size: 0.75rem;
+  top: 3px;
+}
+
+@media (max-width: 560px) {
+  .exp-card {
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+  }
+}

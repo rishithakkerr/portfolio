@@ -1,0 +1,71 @@
+/* About.css */
+
+.about-section {
+  background: var(--bg-section);
+}
+
+.about-text p {
+  color: var(--text-mid);
+  margin-bottom: 18px;
+  font-size: 0.97rem;
+  line-height: 1.85;
+}
+
+.about-text p:last-of-type {
+  margin-bottom: 36px;
+}
+
+.about-text strong {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+/* Row of quick-info facts */
+.about-facts {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  border-top: 1px solid var(--border);
+  padding-top: 28px;
+}
+
+/* Individual fact — more minimal, less card-like */
+.fact-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 18px;
+  flex: 1;
+  min-width: 150px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--bg);
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.fact-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.fact-icon {
+  font-size: 1.2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.fact-card strong {
+  font-size: 0.82rem;
+  color: var(--ink);
+  font-weight: 600;
+  display: block;
+  margin-bottom: 1px;
+  letter-spacing: 0.01em;
+}
+
+.fact-card p {
+  font-size: 0.8rem !important;
+  color: var(--text-light) !important;
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}

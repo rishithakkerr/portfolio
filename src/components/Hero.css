@@ -1,0 +1,148 @@
+/* Hero.css */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 64px;
+  padding: 120px 48px 80px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 520px;
+}
+
+/* Small greeting — restrained, all-caps label */
+.hero-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 24px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border-soft);
+}
+
+/* Big name — serif, confident */
+.hero-name {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(2.6rem, 5vw, 3.8rem);
+  font-weight: 600;
+  line-height: 1.1;
+  color: var(--ink);
+  margin-bottom: 16px;
+  letter-spacing: -0.02em;
+}
+
+/* Subtitle line — quiet, small */
+.hero-subtitle {
+  font-size: 0.92rem;
+  color: var(--text-mid);
+  font-weight: 400;
+  margin-bottom: 28px;
+  letter-spacing: 0.01em;
+}
+
+/* Divider between subtitle and intro */
+.hero-rule {
+  width: 32px;
+  height: 1px;
+  background: var(--accent);
+  margin-bottom: 20px;
+}
+
+/* Intro paragraph */
+.hero-intro {
+  font-size: 0.97rem;
+  color: var(--text-light);
+  line-height: 1.85;
+  margin-bottom: 40px;
+  max-width: 440px;
+}
+
+/* CTA button — ink-filled, simple */
+.btn-primary {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--parchment);
+  font-size: 0.875rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background 0.2s, transform 0.15s;
+}
+
+.btn-primary:hover {
+  background: var(--ink-soft);
+  transform: translateY(-1px);
+}
+
+/* Avatar — monogram, refined */
+.hero-avatar {
+  flex-shrink: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: var(--stone-100);
+  border: 2px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Lora', Georgia, serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--ink);
+  position: relative;
+  z-index: 1;
+  letter-spacing: 0.02em;
+}
+
+/* Decorative ring around avatar */
+.hero-avatar::before {
+  content: '';
+  position: absolute;
+  inset: -8px;
+  border-radius: 50%;
+  border: 1px dashed var(--border);
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+  .hero {
+    flex-direction: column-reverse;
+    padding: 100px 24px 60px;
+    text-align: center;
+    gap: 36px;
+    align-items: center;
+  }
+
+  .hero-badge {
+    display: block;
+  }
+
+  .hero-rule {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-intro {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-avatar {
+    width: 120px;
+    height: 120px;
+    font-size: 1.4rem;
+  }
+}

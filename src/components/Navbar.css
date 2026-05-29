@@ -1,0 +1,85 @@
+/* Navbar.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&family=DM+Sans:wght@300;400;500;600&display=swap');
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(250, 249, 247, 0.96);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 48px;
+  z-index: 100;
+}
+
+/* Brand — serif, personal */
+.navbar-brand {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  letter-spacing: 0.01em;
+  text-decoration: none;
+}
+
+/* Nav links list */
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: var(--text-mid);
+  font-size: 0.875rem;
+  font-weight: 400;
+  padding: 6px 14px;
+  border-radius: 6px;
+  letter-spacing: 0.01em;
+  transition: color 0.2s, background 0.2s;
+}
+
+.navbar-links a:hover,
+.navbar-links a.active {
+  color: var(--ink);
+  background: var(--stone-100);
+}
+
+/* "Contact" link styled as a quiet button */
+.nav-cta {
+  background: var(--ink) !important;
+  color: var(--parchment) !important;
+  border-radius: 6px;
+  font-weight: 500 !important;
+}
+
+.nav-cta:hover {
+  background: var(--ink-soft) !important;
+  color: var(--parchment) !important;
+}
+
+.nav-cta.active {
+  background: var(--ink) !important;
+}
+
+@media (max-width: 640px) {
+  .navbar {
+    padding: 14px 20px;
+  }
+
+  .navbar-links {
+    gap: 2px;
+  }
+
+  .navbar-links a {
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
