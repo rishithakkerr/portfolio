@@ -1,5 +1,6 @@
 // Hero.jsx
 import { Link } from "react-router-dom";
+import TiltedCard from "./TiltedCard";
 import "./Hero.css";
 
 function Hero() {
@@ -13,17 +14,20 @@ function Hero() {
         </p>
         <div className="hero-rule"></div>
         <p className="hero-intro">
-          Computer Science student at ITM Skills University, Mumbai. Previously studied
-          at NJIT, New Jersey. Passionate about building clean web applications and exploring
-          the intersection of technology and business.
+          Computer Science student at ITM Skills University. Previously studied at NJIT, New Jersey. Interested in web development, technology, and business.
         </p>
         <Link to="/contact" className="btn-primary">
           Get in touch
         </Link>
       </div>
-      <div className="hero-avatar" aria-hidden="true">
-        <span>RT</span>
-      </div>
+
+      <TiltedCard
+        imageSrc="/pp.JPG"
+        altText="Rishi Thakker"
+        containerSize="180px"
+        scaleOnHover={1.07}
+        rotateAmplitude={14}
+      />
     </section>
   );
 }

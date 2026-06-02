@@ -6,7 +6,7 @@ const projects = [
     id: 1,
     title: "Personal Portfolio Website",
     description:
-      "This website — built using React functional components and plain CSS. Structured with reusable components for each section, using React Router for navigation and a clean, minimal design system.",
+      "Personal portfolio built with React and React Router, featuring reusable components and a clean responsive design.",
     tech: ["React", "JSX", "CSS", "React Router"],
     status: "Live",
     href: "https://github.com/rishithakkerr",
@@ -15,7 +15,7 @@ const projects = [
     id: 2,
     title: "Password Strength Checker",
     description:
-      "A React app that checks password strength in real time. Evaluates length, numbers, symbols, and uppercase letters — giving instant visual feedback as you type.",
+      "React app that evaluates password strength in real time using multiple validation rules.",
     tech: ["React", "JSX", "CSS"],
     status: "Completed",
     href: null,
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     title: "Coffee Shop",
     description:
-      "An interactive coffee shop webpage built with HTML, CSS, and JavaScript. Features a dynamic menu and UI interactions — a hands-on project exploring DOM manipulation.",
+      "Interactive coffee shop website built with HTML, CSS, and JavaScript.",
     tech: ["HTML", "CSS", "JavaScript"],
     status: "Completed",
     href: "https://github.com/rishithakkerr/JavaScript/tree/main/Coffee%20Shop",
@@ -33,7 +33,7 @@ const projects = [
     id: 4,
     title: "Nature Page",
     description:
-      "A themed multi-section web page about nature, built with HTML5 and CSS3. Focuses on layout design, image handling, and visual hierarchy using modern CSS techniques.",
+      "Responsive multi-section webpage focused on modern CSS layouts and imagery.",
     tech: ["HTML", "CSS"],
     status: "Completed",
     href: "https://github.com/rishithakkerr/HTML/tree/main/Nature%20Page",
@@ -42,7 +42,7 @@ const projects = [
     id: 5,
     title: "Tribute Page",
     description:
-      "A clean tribute page built as a foundational HTML/CSS project. Demonstrates semantic HTML structure, styling typography, and responsive layout fundamentals.",
+      "Simple responsive webpage demonstrating semantic HTML and CSS fundamentals.",
     tech: ["HTML", "CSS"],
     status: "Completed",
     href: "https://github.com/rishithakkerr/HTML/blob/main/Trib.html",
@@ -51,10 +51,18 @@ const projects = [
     id: 6,
     title: "JS Mini Project",
     description:
-      "A mini web application built with vanilla JavaScript exploring interactivity, DOM events, and dynamic content updates without any frameworks.",
+      "Mini JavaScript application showcasing DOM manipulation and interactivity.",
     tech: ["HTML", "CSS", "JavaScript"],
     status: "Completed",
     href: "https://github.com/rishithakkerr/JavaScript/tree/main/Mini%20Project",
+  },
+  {
+    id: 7,
+    title: "Ticket Booking Page",
+    description: "Event ticket booking page built with HTML, CSS, and JavaScript.",
+    tech: ["HTML", "CSS", "JavaScript"],
+    status: "Completed",
+    href: "https://github.com/rishithakkerr/JHCProject",
   },
 ];
 

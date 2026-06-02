@@ -32,7 +32,7 @@ function App() {
           </Routes>
 
           <footer className="footer">
-            <p>© 2025 Rishi Thakker · Built with React</p>
+            <p>© 2026 Rishi Thakker</p>
           </footer>
         </div>
       </BrowserRouter>

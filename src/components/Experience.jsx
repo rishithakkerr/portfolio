@@ -9,9 +9,9 @@ const experiences = [
     period: "March 2025 – August 2025",
     location: "Mumbai, India",
     points: [
-      "Created and translated Hinglish transcripts into fluent English for video content.",
-      "Used AI tools and manual editing to ensure accuracy and natural language flow.",
-      "Generated high-quality English audio using voice cloning technology.",
+      "Translated Hinglish scripts into fluent English.",
+      "Edited content for clarity and accuracy.",
+      "Produced English audio using AI voice tools.",
     ],
   },
   {
@@ -21,9 +21,9 @@ const experiences = [
     period: "September 2023 – December 2024",
     location: "Newark, USA",
     points: [
-      "Managed spreadsheets for payroll, personnel, and purchase orders.",
-      "Handled administrative tasks including data entry, scanning, and digitizing materials.",
-      "Provided front desk support and dealt with library patrons.",
+      "Managed spreadsheets and administrative records.",
+      "Assisted with data entry and document digitization.",
+      "Supported front desk and library operations.",
     ],
   },
   {
@@ -33,9 +33,9 @@ const experiences = [
     period: "September 2023 – 2024",
     location: "Newark, USA",
     points: [
-      "Founded and grew a TikTok page from scratch to 17,000+ followers organically.",
-      "Created engaging content; highest-viewed video reached 4.5 million views.",
-      "Attracted buyout offers exceeding $8,000 due to strong audience engagement.",
+      "Grew a TikTok page to 17,000+ followers.",
+      "Created content with a top video reaching 4.5M views.",
+      "Received audience buyout offers exceeding $8,000.",
     ],
   },
   {
@@ -45,9 +45,9 @@ const experiences = [
     period: "March 2020 – Present",
     location: "Mumbai, India",
     points: [
-      "Co-manage all business operations including marketing, bookkeeping, and customer support.",
-      "Handle supply chain management, product manufacturing, and vendor networking.",
-      "Designed and built the company's website from scratch.",
+      "Co-manage operations, marketing, and customer support.",
+      "Oversee supply chain and vendor coordination.",
+      "Designed and built the company website.",
     ],
   },
   {
@@ -57,9 +57,9 @@ const experiences = [
     period: "October 2018 – Present",
     location: "Mumbai, India",
     points: [
-      "Coordinate and manage free medical camps for underprivileged communities.",
-      "Collect and analyse attendee feedback during summer and winter breaks.",
-      "Support event logistics and on-ground coordination.",
+      "Help organize medical camps and community events.",
+      "Gather participant feedback and event data.",
+      "Support logistics and on-ground coordination.",
     ],
   },
   {
@@ -69,9 +69,9 @@ const experiences = [
     period: "2022 – 2023",
     location: "Mumbai, India",
     points: [
-      "Participated in community service drives and event organisation.",
-      "Collected member data and maintained departmental records.",
-      "Led small independent departments for specific club initiatives.",
+      "Participated in community service initiatives.",
+      "Maintained records and member data.",
+      "Assisted in event planning and execution.",
     ],
   },
 ];

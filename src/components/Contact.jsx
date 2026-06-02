@@ -14,16 +14,16 @@ const contactLinks = [
   {
     id: "github",
     label: "GitHub",
-    value: "github.com/rishithakker",
-    href: "https://github.com/rishithakker",
-    display: "github.com/rishithakker",
+    value: "github.com/rishithakkerr",
+    href: "https://github.com/rishithakkerr",
+    display: "github.com/rishithakkerr",
   },
   {
     id: "linkedin",
     label: "LinkedIn",
-    value: "linkedin.com/in/rishithakker",
-    href: "https://linkedin.com/in/rishithakker",
-    display: "linkedin.com/in/rishithakker",
+    value: "linkedin.com/in/rishithakkerr",
+    href: "https://www.linkedin.com/in/rishi-thakkerr/",
+    display: "linkedin.com/rishithakkerr",
   },
 ];
 
