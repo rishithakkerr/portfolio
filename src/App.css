@@ -13,11 +13,51 @@
   --text-light: #6b7280;
   --bg: #ffffff;
   --bg-section: #f9fafb;
+  --navbar-bg: rgba(250, 249, 247, 0.96);
+  --navbar-border: rgba(229, 231, 235, 1);
+  --navbar-text: #111827;
+  --navbar-link-hover: #f3f4f6;
+  --cta-button-bg: #111827;
+  --cta-button-text: #ffffff;
+  --cta-button-hover: #1f2937;
+  --primary-button-bg: var(--blue);
+  --primary-button-text: #ffffff;
+  --contact-card-bg: var(--bg);
+  --contact-card-border: var(--border);
+  --contact-label-text: var(--text-light);
+  --contact-value-text: var(--accent);
   --border: #e5e7eb;
   --radius: 12px;
   --shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
   --shadow-hover: 0 6px 24px rgba(37, 99, 235, 0.13);
   --max-width: 1000px;
+}
+
+html.dark {
+  --blue: #89a4ff;
+  --blue-light: #21325a;
+  --blue-dark: #1d4ed8;
+  --text-dark: #e8ecf8;
+  --text-mid: #c2c8dd;
+  --text-light: #8f98ac;
+  --bg: #0c1426;
+  --bg-section: #111b2f;
+  --navbar-bg: rgba(12, 20, 38, 0.92);
+  --navbar-border: rgba(255, 255, 255, 0.12);
+  --navbar-text: #e8ecf8;
+  --navbar-link-hover: rgba(255, 255, 255, 0.06);
+  --cta-button-bg: #ffffff;
+  --cta-button-text: #111827;
+  --cta-button-hover: #e5e7eb;
+  --primary-button-bg: #ffffff;
+  --primary-button-text: #111827;
+  --contact-card-bg: #111b2f;
+  --contact-card-border: rgba(255, 255, 255, 0.12);
+  --contact-label-text: var(--text-light);
+  --contact-value-text: #ffffff;
+  --border: rgba(255, 255, 255, 0.12);
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.25);
+  --shadow-hover: 0 6px 24px rgba(0, 0, 0, 0.35);
 }
 
 /* Reset and base */
@@ -86,8 +126,8 @@ body {
 /* Reusable primary button */
 .btn-primary {
   display: inline-block;
-  background: var(--blue);
-  color: #fff;
+  background: var(--primary-button-bg);
+  color: var(--primary-button-text);
   padding: 12px 28px;
   border-radius: var(--radius);
   font-size: 1rem;
@@ -95,11 +135,12 @@ body {
   text-decoration: none;
   border: none;
   cursor: pointer;
-  transition: background 0.2s, transform 0.15s;
+  transition: background 0.2s, transform 0.15s, color 0.2s;
 }
 
 .btn-primary:hover {
   background: var(--blue-dark);
+  color: #ffffff;
   transform: translateY(-2px);
 }
 

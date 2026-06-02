@@ -31,28 +31,24 @@ function About() {
 
             <div className="about-facts">
               <div className="fact-card">
-                <span className="fact-icon">🎓</span>
                 <div>
                   <strong>BTech CSE</strong>
                   <p>ITM Skills University</p>
                 </div>
               </div>
               <div className="fact-card">
-                <span className="fact-icon">📍</span>
                 <div>
                   <strong>Based in</strong>
                   <p>Mumbai, India</p>
                 </div>
               </div>
               <div className="fact-card">
-                <span className="fact-icon">💻</span>
                 <div>
                   <strong>Focus</strong>
                   <p>Web Development</p>
                 </div>
               </div>
               <div className="fact-card">
-                <span className="fact-icon">🌍</span>
                 <div>
                   <strong>Also studied at</strong>
                   <p>NJIT, New Jersey</p>

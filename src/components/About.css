@@ -44,14 +44,8 @@
 }
 
 .fact-card:hover {
-  border-color: var(--accent);
+  border-color: var(--blue);
   transform: translateY(-2px);
-}
-
-.fact-icon {
-  font-size: 1.2rem;
-  line-height: 1;
-  flex-shrink: 0;
 }
 
 .fact-card strong {

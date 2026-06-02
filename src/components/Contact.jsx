@@ -9,7 +9,6 @@ const contactLinks = [
     label: "Email",
     value: "rishimthakker@gmail.com",
     href: "mailto:rishimthakker@gmail.com",
-    emoji: "✉️",
     display: "rishimthakker@gmail.com",
   },
   {
@@ -17,7 +16,6 @@ const contactLinks = [
     label: "GitHub",
     value: "github.com/rishithakker",
     href: "https://github.com/rishithakker",
-    emoji: "🐙",
     display: "github.com/rishithakker",
   },
   {
@@ -25,7 +23,6 @@ const contactLinks = [
     label: "LinkedIn",
     value: "linkedin.com/in/rishithakker",
     href: "https://linkedin.com/in/rishithakker",
-    emoji: "💼",
     display: "linkedin.com/in/rishithakker",
   },
 ];
@@ -38,7 +35,6 @@ function ContactCard({ link }) {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <span className="contact-emoji">{link.emoji}</span>
       <div>
         <p className="contact-label">{link.label}</p>
         <p className="contact-value">{link.display}</p>

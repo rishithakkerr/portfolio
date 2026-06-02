@@ -18,15 +18,7 @@
 
 .project-card:hover {
   transform: translateY(-3px);
-  border-color: var(--accent);
-}
-
-.project-banner {
-  background: var(--stone-100);
-  font-size: 1.8rem;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid var(--border);
+  border-color: var(--blue);
 }
 
 .project-body {

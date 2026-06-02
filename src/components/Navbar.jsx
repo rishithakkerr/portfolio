@@ -2,6 +2,7 @@
 // Uses React Router's <Link> to navigate between pages (no page reload)
 
 import { Link, useLocation } from "react-router-dom";
+import { useTheme } from "../ThemeContext";
 import "./Navbar.css";
 
 // Nav items — label shown, path is the URL route
@@ -15,6 +16,8 @@ const navItems = [
 function Navbar() {
   // useLocation gives us the current URL so we can highlight the active link
   const location = useLocation();
+  const { theme, toggleTheme } = useTheme();
+  const toggleLabel = theme === "dark" ? "Light theme" : "Dark theme";
 
   return (
     <nav className="navbar">
@@ -41,6 +44,12 @@ function Navbar() {
           >
             Contact
           </Link>
+        </li>
+
+        <li>
+          <button className="theme-toggle" type="button" onClick={toggleTheme}>
+            {toggleLabel}
+          </button>
         </li>
       </ul>
     </nav>

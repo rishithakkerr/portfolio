@@ -24,12 +24,7 @@
 
 .skill-card:hover {
   transform: translateY(-3px);
-  border-color: var(--accent);
-}
-
-.skill-emoji {
-  font-size: 1.6rem;
-  line-height: 1;
+  border-color: var(--blue);
 }
 
 .skill-name {

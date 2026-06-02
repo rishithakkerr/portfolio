@@ -8,7 +8,6 @@ const experiences = [
     org: "Allern Enterprises",
     period: "March 2025 – August 2025",
     location: "Mumbai, India",
-    emoji: "🎙️",
     points: [
       "Created and translated Hinglish transcripts into fluent English for video content.",
       "Used AI tools and manual editing to ensure accuracy and natural language flow.",
@@ -21,7 +20,6 @@ const experiences = [
     org: "Robert Van Houten Library, NJIT",
     period: "September 2023 – December 2024",
     location: "Newark, USA",
-    emoji: "📚",
     points: [
       "Managed spreadsheets for payroll, personnel, and purchase orders.",
       "Handled administrative tasks including data entry, scanning, and digitizing materials.",
@@ -34,7 +32,6 @@ const experiences = [
     org: "Independent",
     period: "September 2023 – 2024",
     location: "Newark, USA",
-    emoji: "📱",
     points: [
       "Founded and grew a TikTok page from scratch to 17,000+ followers organically.",
       "Created engaging content; highest-viewed video reached 4.5 million views.",
@@ -47,7 +44,6 @@ const experiences = [
     org: "Heka & Hera",
     period: "March 2020 – Present",
     location: "Mumbai, India",
-    emoji: "🏢",
     points: [
       "Co-manage all business operations including marketing, bookkeeping, and customer support.",
       "Handle supply chain management, product manufacturing, and vendor networking.",
@@ -60,7 +56,6 @@ const experiences = [
     org: "Lala Foundation",
     period: "October 2018 – Present",
     location: "Mumbai, India",
-    emoji: "❤️",
     points: [
       "Coordinate and manage free medical camps for underprivileged communities.",
       "Collect and analyse attendee feedback during summer and winter breaks.",
@@ -73,7 +68,6 @@ const experiences = [
     org: "Rotaract Club Mulund Hill View",
     period: "2022 – 2023",
     location: "Mumbai, India",
-    emoji: "🌀",
     points: [
       "Participated in community service drives and event organisation.",
       "Collected member data and maintained departmental records.",
@@ -85,7 +79,6 @@ const experiences = [
 function ExperienceCard({ exp }) {
   return (
     <div className="exp-card">
-      <div className="exp-dot">{exp.emoji}</div>
       <div className="exp-content">
         <div className="exp-header">
           <div>

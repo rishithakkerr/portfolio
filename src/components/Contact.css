@@ -24,8 +24,8 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  background: var(--bg);
-  border: 1px solid var(--border);
+  background: var(--contact-card-bg);
+  border: 1px solid var(--contact-card-border);
   border-radius: 8px;
   padding: 18px 20px;
   text-decoration: none;
@@ -34,17 +34,12 @@
 
 .contact-card:hover {
   transform: translateY(-2px);
-  border-color: var(--accent);
-}
-
-.contact-emoji {
-  font-size: 1.4rem;
-  flex-shrink: 0;
+  border-color: var(--blue);
 }
 
 .contact-label {
   font-size: 0.68rem;
-  color: var(--text-light);
+  color: var(--contact-label-text);
   font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.08em;
@@ -53,7 +48,7 @@
 
 .contact-value {
   font-size: 0.875rem;
-  color: var(--accent);
+  color: var(--contact-value-text);
   font-weight: 500;
   word-break: break-all;
 }

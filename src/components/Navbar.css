@@ -7,9 +7,9 @@
   top: 0;
   left: 0;
   width: 100%;
-  background: rgba(250, 249, 247, 0.96);
+  background: var(--navbar-bg);
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--navbar-border);
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -22,7 +22,7 @@
   font-family: 'Lora', Georgia, serif;
   font-size: 1rem;
   font-weight: 600;
-  color: var(--ink);
+  color: var(--navbar-text);
   letter-spacing: 0.01em;
   text-decoration: none;
 }
@@ -48,25 +48,44 @@
 
 .navbar-links a:hover,
 .navbar-links a.active {
-  color: var(--ink);
-  background: var(--stone-100);
+  color: var(--navbar-text);
+  background: var(--navbar-link-hover);
 }
 
 /* "Contact" link styled as a quiet button */
 .nav-cta {
-  background: var(--ink) !important;
-  color: var(--parchment) !important;
+  background: var(--cta-button-bg) !important;
+  color: var(--cta-button-text) !important;
   border-radius: 6px;
   font-weight: 500 !important;
 }
 
+.theme-toggle {
+  background: transparent;
+  color: var(--text-mid);
+  border: 1px solid var(--border);
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  margin-left: 12px;
+}
+
+.theme-toggle:hover {
+  background: var(--navbar-link-hover);
+  border-color: var(--border);
+}
+
 .nav-cta:hover {
-  background: var(--ink-soft) !important;
-  color: var(--parchment) !important;
+  background: var(--cta-button-hover) !important;
+  color: var(--cta-button-text) !important;
 }
 
 .nav-cta.active {
-  background: var(--ink) !important;
+  background: var(--cta-button-bg) !important;
+  color: var(--cta-button-text) !important;
 }
 
 @media (max-width: 640px) {
@@ -78,7 +97,8 @@
     gap: 2px;
   }
 
-  .navbar-links a {
+  .navbar-links a,
+  .theme-toggle {
     font-size: 0.8rem;
     padding: 5px 10px;
   }
